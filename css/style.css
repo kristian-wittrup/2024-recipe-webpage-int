@@ -44,12 +44,21 @@ body {
 }
 
 .container {
-  background-color:red;
+  background-color:var(--background-color-dark-bg);
   width:var(--width-full);
   height:auto;
 }
 
-.menu-container {}
+.navigation {
+  background-color: var(--background-color-navigation);
+  position:relative;
+  z-index: 1000;
+}
+
+.menu-container {
+  width:var(--width-12col);
+  margin: 0 auto;
+}
 
 .menu-container ul {
   display:flex
@@ -57,7 +66,23 @@ body {
 
 .menu-container ul li {
   list-style-type: none;
-  margin:10px;
+  margin:10px 0 10px 0;
+}
+
+.menu-container ul li a {
+  color:var(--background-color-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-right: 1px solid var(--background-color-light);
+  padding: 0 10px 0 10px;
+}
+
+.menu-container ul li a:hover {
+  color:var(--primary-color);
+}
+
+.menu-container ul li:last-child a {
+  border-right: none;
 }
 
 .hero { /* Parent with 100% width*/
@@ -68,6 +93,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  margin-top:-40px
 } 
 
 .hero-container {/* child to follow to 12 column */
