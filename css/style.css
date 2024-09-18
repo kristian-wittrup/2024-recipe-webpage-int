@@ -94,7 +94,8 @@ body {
   background-size: cover;
   background-position: center center;
 
-  margin-top:-40px
+  margin-top:-40px;
+  color:var(--background-color-light);
 } 
 
 .hero-container {/* child to follow to 12 column */
@@ -112,8 +113,40 @@ body {
   grid-row: 1;
 }
 
+.hero-text-smallest {
+  font-size: 12px;
+}
+
+.hero-text-medium {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-top:15px;
+}
+
+.hero-text-large {
+  font-size: 37px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top:5px;
+  margin-bottom:15px
+}
+
 .hero-search {
   grid-column: 2 / span 3;
   margin-top:60px;
   grid-row: 2;
+}
+
+.search-input {
+  background-color: transparent;
+  -webkit-appearance: none;
+  outline:none;
+  border: 1px solid var(--background-color-light);
+  border-radius: 5px;
+  padding: 10px 20px 10px 40px;
+  color:var(--background-color-light)
+}
+
+.search-input::placeholder {
+  color:var(--background-color-light);
 }
