@@ -150,3 +150,32 @@ body {
 .search-input::placeholder {
   color:var(--background-color-light);
 }
+
+/* Working now, copy this */
+.todays_recipe {  
+  height: fit-content;
+  width:var(--width-full);
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px auto;
+  gap:var(--grid-gap);
+}  /* end copy */
+
+.todays_recipes_content_block_image img {
+  height: 200px;
+  width:100%;
+  background-size: cover ;
+  background-position: center;
+}
+
+.todays_recipes_headline {
+  color:var(--color-white);
+  height:60px;
+  border-bottom: 1px solid var(--color-white);
+  text-transform: uppercase;
+  font-weight:700;
+  margin-top:70px;
+  display:flex;
+  align-items: center;
+  justify-self: flex-start
+}
