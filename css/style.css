@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
 
@@ -166,6 +167,8 @@ body {
   width:100%;
   background-size: cover ;
   background-position: center;
+  border-radius: 5px 5px 0 0;
+
 }
 
 .todays_recipes_headline {
@@ -177,5 +180,81 @@ body {
   margin-top:70px;
   display:flex;
   align-items: center;
-  justify-self: flex-start
+  justify-self: flex-start;
+  margin: 0 auto;
+  width:var(--width-12col);
+}
+ 
+.todays_recipes_content {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:var(--grid-gap);
+  box-sizing: border-box;
+  width:var(--width-12col);
+  margin: 0 auto;
+}
+
+.todays_recipes_content_block {
+  background-color: var(--background-color-light);
+  border-radius: 5px;
+
+}
+
+.todays_recipes_content_block_text {
+  padding: 20px;
+  color: var(--color_dark);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex:1;
+}
+
+.todays_recipes_content_block_text h4 {
+  text-transform: uppercase;
+  font-size:22px;
+  font-weight: 700;
+  margin:0 0 10px 0;
+}
+
+.todays_recipes_content_block_text p {
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.todays_recipes_content_block_bottom_area {
+  display: flex;
+  justify-content:space-between ;
+  margin:20px 0 0 0;
+}
+/* refactor later start*/
+.todays_recipes_content_block_bottom_area_left {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:0 0 0 10px;
+  border-left: 1px solid var(--category-seafood);
+}
+
+.category-color {
+  color: var(--category-seafood);
+}
+/* refactor later end*/
+
+.todays_recipes_content_block_bottom_area_right {}
+
+.todays_recipes_content_block_bottom_area_right button {
+  background-color: var(--color_dark);
+  border: 1px solid var(--background-color-light);
+  padding:8px 16px;
+  border-radius:5px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor:pointer;
+}
+
+.todays_recipes_content_block_bottom_area_right button a {
+  color:var(--background-color-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
 }
