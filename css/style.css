@@ -39,13 +39,19 @@
   box-sizing: border-box;
 }
 
+/** Global Styles */
+.category-seafood {
+  color:var(--category-seafood);
+}
+
 body {
   background-color:var(--background-color-dark-bg);
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  background-color:var(--background-color-dark-bg);
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(89,89,89,1) 100%);
   width:var(--width-full);
   height:auto;
 }
@@ -162,6 +168,11 @@ body {
   gap:var(--grid-gap);
 }  /* end copy */
 
+
+.todays_recipes_content_block_image {
+/*   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+ */}
+
 .todays_recipes_content_block_image img {
   height: 200px;
   width:100%;
@@ -183,6 +194,8 @@ body {
   justify-self: flex-start;
   margin: 0 auto;
   width:var(--width-12col);
+  font-size:50px;
+  text-shadow: 1px 1px 2px var(--background-color-dark-bg);
 }
  
 .todays_recipes_content {
@@ -197,7 +210,7 @@ body {
 .todays_recipes_content_block {
   background-color: var(--background-color-light);
   border-radius: 5px;
-
+  box-shadow: 1px 1px 1px var(--background-color-dark-bg);
 }
 
 .todays_recipes_content_block_text {
