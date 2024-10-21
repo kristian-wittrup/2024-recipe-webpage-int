@@ -246,11 +246,76 @@ body {
   justify-content: space-between;
   padding:0 0 0 10px;
   border-left: 1px solid var(--category-seafood);
+  text-transform: uppercase;
 }
 
-.category-color {
+div[data-category="seafood"] {
+  border-left: 1px solid var(--category-seafood);
+}
+
+p[data-category="seafood"] {
   color: var(--category-seafood);
 }
+
+div[data-category="chicken"] {
+  border-left: 1px solid var(--category-chicken);
+}
+
+p[data-category="chicken"] {
+  color: var(--category-chicken);
+}
+
+div[data-category="pasta"] {
+  border-left: 1px solid var(--category-pasta);
+}
+
+p[data-category="pasta"] {
+  color: var(--category-pasta);
+}
+
+div[data-category="veg"] {
+  border-left: 1px solid var(--category-veg);
+}
+
+p[data-category="veg"] {
+  color: var(--category-veg);
+}
+
+div[data-category="meats"] {
+  border-left: 1px solid var(--category-meats);
+}
+
+p[data-category="meats"] {
+  color: var(--category-meats);
+}
+
+div[data-category="dessert"] {
+  border-left: 1px solid var(--category-dessert);
+}
+
+p[data-category="dessert"] {
+  color: var(--category-dessert);
+}
+
+div[data-category="misc"] {
+  border-left: 1px solid var(--category-misc);
+}
+
+p[data-category="misc"] {
+  color: var(--category-misc);
+}
+
+#chicken-icon {
+  color: var(--category-chicken);
+}
+
+#cat-test::after {
+  content: attr(data-category);
+}
+
+/* .category-color {
+  color: var(--category-seafood);
+} */
 /* refactor later end*/
 
 .todays_recipes_content_block_bottom_area_right {}

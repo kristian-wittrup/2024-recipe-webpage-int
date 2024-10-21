@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Webpage</title>
@@ -35,6 +36,8 @@
           <p class="hero-text-smallest">40% healthy</p>
         </div>
         <div class="hero-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-thin fa-bowl-chopsticks-noodles"></i>
           <input type="search" name="" class="search-input" placeholder="Search">
         </div>
       </div>
@@ -58,7 +61,7 @@
             <div class="todays_recipes_content_block_text_bottom">
               <div class="todays_recipes_content_block_bottom_area">
                 <div class="todays_recipes_content_block_bottom_area_left">
-                  <p class="category-color">Seafood</p>
+                  <p class="category-color" data-category="seafood">Seafood</p>
                   <p>Recipe</p>
                 </div>
                 <div class="todays_recipes_content_block_bottom_area_right">
@@ -76,14 +79,16 @@
             <img src="https://picsum.photos/300/175" alt="">
           </div>
           <div class="todays_recipes_content_block_text">
-            <div class="todays_recipes_content_block_text_top category-seafood">
+            <div class="todays_recipes_content_block_text_top category-seafoodx">
               <h4>FoodName</h4>
               <p>Lorem ipsum, much tasty yum yum. Huzzah</p>
+              <i class="fa-solid fa-drumstick-bite" id="chicken-icon"></i>
+       
             </div>
             <div class="todays_recipes_content_block_text_bottom">
               <div class="todays_recipes_content_block_bottom_area">
-                <div class="todays_recipes_content_block_bottom_area_left">
-                  <p class="category-color">Seafood</p>
+                <div class="todays_recipes_content_block_bottom_area_left" data-category="chicken">
+                  <p data-category="chicken" id="cat-test"></p>
                   <p>Recipe</p>
                 </div>
                 <div class="todays_recipes_content_block_bottom_area_right">
