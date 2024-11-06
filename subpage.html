@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Webpage</title>
+</head>
+<body>
+  <div class="container">
+
+    <nav class="navigation">
+      <div class="menu-container">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#">Recipe</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+
+    <section class="recipe_details">
+      <div class="recipe_details_left">
+        <div class="recipe-hero-text">
+          <p class="recipe-hero-text-smallest color-primary">#1 Bender’s most shiny recipe</p>
+          <p class="recipe-hero-text-medium">Boozy brown</p>
+          <p class="recipe-hero-text-large">Lentil soup</p>
+        </div>
+        
+        <!-- div element to contain 3 info, checkboxes and 2 buttons -->
+        <div class="recipe_details_ingredient_block">
+
+          <!-- Part I -->
+          <!-- div element .recipe_details_ingredient_block_info_three + .recipe_details_ingredient_block_info_three_item*3 with i+p as children -->
+          <div class="recipe_details_ingredient_block_info_three">
+            <div class="recipe_details_ingredient_block_info_three_item">
+              <i class="fas fa-clock"></i>
+              <p>20 minutes</p>
+            </div>
+            <div class="recipe_details_ingredient_block_info_three_item">
+              <i class="fas fa-fire"></i>
+              <p>200 calories</p>              
+            </div>
+            <div class="recipe_details_ingredient_block_info_three_item">
+              <i class="fas fa-chart-simple"></i>
+              <p>Beginner</p>
+            </div>
+          </div>
+
+       
+          <div class="recipe_details_ingredients">
+            <!-- Part II -->
+            <!-- header (h4) + div element (.recipe_details_ingredient_block_checkboxes) & input fields-->
+            <h4>Ingredients</h4>
+            <div class="recipe_details_ingredient_block_checkboxes">
+              <label><input type="checkbox"> Lentil </label>
+              <label><input type="checkbox"> Chickpeas </label>
+              <label><input type="checkbox"> Brown Ale </label>
+              <label><input type="checkbox"> Onion </label>
+              <label><input type="checkbox"> Tomatoes </label>
+              <label><input type="checkbox"> Garlic </label>
+            </div>
+          </div>
+
+          <!-- Part III -->
+          <!-- div element .recipe_details_ingredient_block_buttons with 2 buttons and i + a as children -->
+          <div class="recipe_details_ingredient_block_buttons">
+            <button>
+              <i class="fas fa-print"></i>
+              <a href="">Print</a>
+            </button>
+            <button>
+              <i class="fas fa-heart"></i>
+              <a href="">Favorite</a>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- right side contains image -->
+      <div class="recipe_details_right">
+        <div class="recipe_details_right_image">
+          <img src="img/boozeLentil.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- div element .recipe_instruction_one with .filler_block as child :: just to take up space for future ul>li -->
+    <section class="recipe_instruction_one">
+      <div class="filler_block"></div>
+    </section>
+
+    <section class="recipe_instruction_one">
+
+    </section>
+
+    <footer></footer>
+
+  </div>
+</body>
+</html>
